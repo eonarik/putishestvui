@@ -1,41 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="theme-color" content="#000000" />
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <title>Путешествия</title>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <link rel="stylesheet" href="http://putishestvuy.ru/assets/plugins/bootstrap/4/css/bootstrap-4.2.1.min.css">
+  <link rel="stylesheet" href="http://putishestvuy.ru/assets/plugins/select.simple/css/jquery.select-simple-1.1.0.css">
+
+  <link rel="stylesheet" href="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/css/fonts.css">
+  <link rel="stylesheet" href="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/css/main.css?1549546648">
+  <link rel="stylesheet" href="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/css/media.css?1549546648">
+
+  <style>
+    .multi-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border: 1px solid #ced4da;
+      border-top: none;
+      border-radius: 0 0 .25rem .25rem;
+      background: #FFF;
+      max-height: 170px;
+      overflow: auto;
+      line-height: 1.2;
+      display: none;
+    }
+    .multi-list:hover,
+    .multi-list--active {
+      display: block;
+    }
+    .multi-list-clear {
+      float: right;
+      margin-top: -38px;
+      border-radius: 3px;
+    }
+    .multi-list ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+    }
+    .multi-list ul.open {
+      display: block;
+    }
+    .multi-list li {
+      display: block;
+    }
+
+    .multi-list__text {
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+    }
+    .multi-list ul .multi-list__text {
+      padding-left: 20px;
+    }
+    .multi-list ul ul .multi-list__text {
+      padding-left: 30px;
+    }
+
+    .multi-list__value {
+      display: block;
+      cursor: pointer;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .multi-list li:not(.disabled) > .multi-list__text:hover {
+      background: #EFEFEF;
+    }
+
+    .multi-list__toggle {
+      display: block;
+      border: solid #666;
+      border-width: 0 2px 2px 0;
+      transform: rotate(-45deg);
+      width: 10px;
+      height: 10px;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: .15s;
+    }
+    .multi-list__toggle--active {
+      transform: rotate(0);
+    }
+
+    .multi-list__checkbox {
+      position: relative;
+      display: block;
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+      flex: 0 0 16px;
+      border: 1px solid #ced4da;
+      margin-right: 10px;
+      transition: .15s;
+    }
+    .multi-list__checkbox--checked-dirty:after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: #666;
+      top: 3px;
+      left: 3px;
+    }
+    .multi-list__checkbox--checked:after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 8px;
+      border: solid #666;
+      border-width: 0 0 2px 2px;
+      transform: rotate(-45deg);
+      top: 0px;
+      left: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="js-sticky-fake" style="height: 0px;"></div>
+    <div class="header-top" data-sticky="" style="position: static; top: 0px; left: 0px; right: 0px; z-index: 1035;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="header-top__menu">
+              <ul class="">
+                <li class="first active"><a href="search-tours.html">Поиск туров</a></li>
+                <li><a href="last-minute-tours.html">Горящие туры</a></li>
+                <li><a href="hotels.html">Отели</a></li>
+                <li><a href="air-tickets.html">Авиабилеты</a></li>
+                <li class="last"><a href="about.html">О нас</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12 d-flex justify-content-end">
+            <div class="header-top__city">
+              <a href="#">Краснодар</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <a href="/" class="header-block__logo">
+              <img src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/img/logo.png" alt="img-responsive">
+            </a>
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="header-block__phone-block">
+              <div class="header-block__phone">
+                <p>8 (495) 889 66 88</p>
+                <p><a href="#" class="">Позвоните мне сейчас</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="header-block__btn">
+              <a href="#" class="btn btn-warning">Подобрать по телефону</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="inner-page">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="/">Главная</a></li>
+        <li class="active">Поиск туров</li>
+      </ul>
+
+      <h1>Поиск туров</h1>
+
+      <div class="row">
+        <div class="col-12 col-md-3">
+
+        </div>
+        <div class="col-12 col-md-9">
+          <div id="root"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <a href="#" class="logo"><img src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/img/logo-footer.png"
+              alt="" class="img-responsive"></a>
+          <p class="copy">
+            ©2019.
+            Все материалы и цены, размещенные на сайте, носят справочный характер и не являются ни публичной офертой,
+            ни рекламой.
+          </p>
+          <a href="#" class="btn btn-warning btn-block">Подобрать тур по телефону</a>
+        </div>
+        <div class="offset-md-1 col-md-8">
+          <div class="footer-menu row justify-content-between">
+            <div class="footer-menu__item col-12 col-md-auto">
+              <h3>О компании</h3>
+
+              <ul class="list-unstyled">
+                <li><a href="#">Офисы продаж</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Пресса о нас</a></li>
+                <li><a href="#">Отзывы о нас</a></li>
+                <li><a href="#">Наши партнеры</a></li>
+                <li><a href="#">Реквизиты</a></li>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu__item col-12 col-md-auto">
+              <h3>Партнерам</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Открыть франшизу</a></li>
+                <li><a href="#">Стать партнером</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu__item col-12 col-md-auto">
+              <h3>Туристам</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Пользовательское соглашение</a></li>
+                <li><a href="#">Правила покупки</a></li>
+                <li><a href="#">Как купить тур</a></li>
+                <li><a href="#">Частые вопросы</a></li>
+                <li><a href="#">Обратная связь</a></li>
+                <li><a href="#">Туры в рассрочку</a></li>
+                <li><a href="#">Страхование</a></li>
+                <li><a href="#">Горнолыжные туры</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="list-unstyled">
+            <li><a href="pravila-rasprostraneniya-i-ispolzovaniya-promokodov-i/ili-kuponov.html">Правила
+                распространения и использования промокодов и/или купонов</a></li>
+            <li><a href="soglashenie-o-konfidenczialnosti.html">Соглашение о конфиденциальности</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="row align-items-end">
+          <div class="col-md-9">
+            <div class="pay-list">
+              <a href="#"><img src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/img/p-1.jpg" class="img-responsive"
+                  alt=""></a>
+              <a href="#"><img src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/img/p-2.jpg" class="img-responsive"
+                  alt=""></a>
+              <a href="#"><img src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/img/p-3.jpg" class="img-responsive"
+                  alt=""></a>
+              <a href="#"><img src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/img/p-4.jpg" class="img-responsive"
+                  alt=""></a>
+              <a href="#"><img src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/img/p-5.jpg" class="img-responsive"
+                  alt=""></a>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="net-work">
+              <p>Мы в социальных сетях</p>
+              <div class="net-work-list">
+                <a href="#"><img src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/img/fb.jpg" alt=""></a>
+                <a href="#"><img src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/img/vk.jpg" alt=""></a>
+                <a href="#"><img src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/img/tw.jpg" alt=""></a>
+                <a href="#"><img src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/img/ok.jpg" alt=""></a>
+                <a href="#"><img src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/img/ins.jpg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://putishestvuy.ru/assets/plugins/jquery/jquery-1.12.2.min.js"></script>
+  <script src="http://putishestvuy.ru/assets/plugins/bootstrap/4/js/popper-1.14.6.min.js"></script>
+  <script src="http://putishestvuy.ru/assets/plugins/bootstrap/4/js/bootstrap-4.2.1.min.js"></script>
+  <script src="http://putishestvuy.ru/assets/plugins/sticky.menu/jquery.stickmenu-1.1.1.js"></script>
+  <script src="http://putishestvuy.ru/assets/plugins/select.simple/js/jquery.select-simple-1.1.0.js"></script>
+  <script>
+    $(".js-select").selectSimple();
+  </script>
+
+  <script src="http://putishestvuy.ru/assets/components/modxsite/templates/putishestvui/v1/js/custom.js?1549546648"></script>
+
+  <script src="chrome-extension://iepmcfkedcobclgjlblahmlekodmnmmk/shared_constants.js"></script>
+  <script src="chrome-extension://iepmcfkedcobclgjlblahmlekodmnmmk/connectors/utils.js"></script>
+</body>
+
 </html>

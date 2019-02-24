@@ -1,0 +1,847 @@
+{
+  "success": true,
+  "data": {
+    "departureCities": [{
+        "countryId": 460,
+        "departureCityId": 1469,
+        "isDepartureCity": true,
+        "isHidden": true,
+        "id": 1469,
+        "order": -1,
+        "name": "Минеральные Воды"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 1,
+        "isDepartureCity": true,
+        "id": 1,
+        "order": 0,
+        "name": "Москва"
+      },
+      {
+        "countryId": 29,
+        "departureCityId": 619,
+        "isDepartureCity": true,
+        "id": 619,
+        "order": 1,
+        "name": "Афины"
+      },
+      {
+        "countryId": 29,
+        "departureCityId": 615,
+        "isDepartureCity": true,
+        "id": 615,
+        "order": 2,
+        "name": "Салоники"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 299,
+        "isDepartureCity": true,
+        "id": 299,
+        "order": 2,
+        "name": "Архангельск"
+      },
+      {
+        "countryId": 29,
+        "departureCityId": 195,
+        "isDepartureCity": true,
+        "id": 195,
+        "order": 3,
+        "name": "Ираклион"
+      },
+      {
+        "countryId": 29,
+        "departureCityId": 615,
+        "isDepartureCity": true,
+        "id": 1019,
+        "order": 4,
+        "name": "о. Закинф"
+      },
+      {
+        "countryId": 29,
+        "departureCityId": 615,
+        "isDepartureCity": true,
+        "id": 913,
+        "order": 5,
+        "name": "о. Корфу"
+      },
+      {
+        "countryId": 29,
+        "departureCityId": 615,
+        "isDepartureCity": true,
+        "id": 912,
+        "order": 6,
+        "name": "о. Крит"
+      },
+      {
+        "countryId": 29,
+        "departureCityId": 860,
+        "isDepartureCity": true,
+        "id": 860,
+        "order": 7,
+        "name": "о. Родос"
+      },
+      {
+        "countryId": 29,
+        "departureCityId": 615,
+        "isDepartureCity": false,
+        "id": 914,
+        "order": 8,
+        "name": "о. Тасос"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 645,
+        "isDepartureCity": true,
+        "id": 645,
+        "order": 8,
+        "name": "Ижевск"
+      },
+      {
+        "countryId": 29,
+        "departureCityId": 615,
+        "isDepartureCity": false,
+        "id": 906,
+        "order": 9,
+        "name": "Пиерия"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 350,
+        "isDepartureCity": true,
+        "id": 350,
+        "order": 9,
+        "name": "Иркутск"
+      },
+      {
+        "countryId": 29,
+        "departureCityId": 615,
+        "isDepartureCity": false,
+        "id": 908,
+        "order": 10,
+        "name": "п-ов Пелопоннес"
+      },
+      {
+        "countryId": 29,
+        "departureCityId": 615,
+        "isDepartureCity": false,
+        "id": 903,
+        "order": 11,
+        "name": "Халкидики"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 306,
+        "isDepartureCity": true,
+        "id": 306,
+        "order": 11,
+        "name": "Калининград"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 295,
+        "isDepartureCity": true,
+        "id": 295,
+        "order": 13,
+        "name": "Санкт-Петербург"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 269,
+        "isDepartureCity": true,
+        "id": 269,
+        "order": 13,
+        "name": "Красноярск"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 358,
+        "isDepartureCity": true,
+        "id": 358,
+        "order": 14,
+        "name": "Волгоград"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 633,
+        "isDepartureCity": true,
+        "id": 633,
+        "order": 15,
+        "name": "Воронеж"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 632,
+        "isDepartureCity": true,
+        "id": 632,
+        "order": 15,
+        "name": "Нижневартовск"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 266,
+        "isDepartureCity": true,
+        "id": 266,
+        "order": 16,
+        "name": "Екатеринбург"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 238,
+        "isDepartureCity": true,
+        "id": 238,
+        "order": 17,
+        "name": "Казань"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 734,
+        "isDepartureCity": true,
+        "id": 734,
+        "order": 17,
+        "name": "Новокузнецк"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 313,
+        "isDepartureCity": true,
+        "id": 313,
+        "order": 18,
+        "name": "Краснодар"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 1,
+        "isDepartureCity": false,
+        "id": 678,
+        "order": 19,
+        "name": "Липецк"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 234,
+        "isDepartureCity": true,
+        "id": 234,
+        "order": 20,
+        "name": "Нижний Новгород"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 345,
+        "isDepartureCity": true,
+        "id": 345,
+        "order": 20,
+        "name": "Оренбург"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 324,
+        "isDepartureCity": true,
+        "id": 324,
+        "order": 21,
+        "name": "Новосибирск"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 305,
+        "isDepartureCity": true,
+        "id": 305,
+        "order": 22,
+        "name": "Омск"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 1,
+        "isDepartureCity": false,
+        "id": 308,
+        "order": 23,
+        "name": "Пенза"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 263,
+        "isDepartureCity": true,
+        "id": 263,
+        "order": 24,
+        "name": "Пермь"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 1469,
+        "isDepartureCity": true,
+        "id": 711,
+        "order": 25,
+        "name": "Пятигорск"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 260,
+        "isDepartureCity": true,
+        "id": 260,
+        "order": 26,
+        "name": "Ростов-на-Дону"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 232,
+        "isDepartureCity": true,
+        "id": 232,
+        "order": 27,
+        "name": "Самара"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 454,
+        "isDepartureCity": true,
+        "id": 454,
+        "order": 27,
+        "name": "Сочи"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 623,
+        "isDepartureCity": true,
+        "id": 623,
+        "order": 28,
+        "name": "Саратов"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 828,
+        "isDepartureCity": true,
+        "id": 828,
+        "order": 28,
+        "name": "Ставрополь"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 232,
+        "isDepartureCity": true,
+        "id": 646,
+        "order": 29,
+        "name": "Тольятти"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 690,
+        "isDepartureCity": true,
+        "id": 690,
+        "order": 29,
+        "name": "Сургут"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 618,
+        "isDepartureCity": true,
+        "id": 618,
+        "order": 30,
+        "name": "Тюмень"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 307,
+        "isDepartureCity": true,
+        "id": 307,
+        "order": 30,
+        "name": "Томск"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 1,
+        "isDepartureCity": false,
+        "id": 638,
+        "order": 31,
+        "name": "Ульяновск"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 665,
+        "isDepartureCity": true,
+        "id": 665,
+        "order": 32,
+        "name": "Уфа"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 266,
+        "isDepartureCity": false,
+        "id": 649,
+        "order": 33,
+        "name": "Челябинск"
+      },
+      {
+        "countryId": 460,
+        "departureCityId": 1,
+        "isDepartureCity": false,
+        "id": 231,
+        "order": 34,
+        "name": "Ярославль"
+      },
+      {
+        "countryId": 5,
+        "departureCityId": 218,
+        "isDepartureCity": true,
+        "id": 218,
+        "order": 35,
+        "name": "Киев"
+      },
+      {
+        "countryId": 5,
+        "departureCityId": 218,
+        "isDepartureCity": true,
+        "id": 219,
+        "order": 36,
+        "name": "Днепр"
+      },
+      {
+        "countryId": 5,
+        "departureCityId": 1008,
+        "isDepartureCity": true,
+        "id": 1008,
+        "order": 37,
+        "name": "Львов"
+      },
+      {
+        "countryId": 5,
+        "departureCityId": 462,
+        "isDepartureCity": true,
+        "id": 462,
+        "order": 38,
+        "name": "Одесса"
+      },
+      {
+        "countryId": 5,
+        "departureCityId": 310,
+        "isDepartureCity": true,
+        "id": 310,
+        "order": 39,
+        "name": "Харьков"
+      },
+      {
+        "countryId": 375,
+        "departureCityId": 448,
+        "isDepartureCity": true,
+        "id": 448,
+        "order": 40,
+        "name": "Минск"
+      },
+      {
+        "countryId": 6258,
+        "departureCityId": 1617,
+        "isDepartureCity": true,
+        "id": 1617,
+        "order": 41,
+        "name": "Ларнака"
+      },
+      {
+        "countryId": 6258,
+        "departureCityId": 1617,
+        "isDepartureCity": true,
+        "id": 2442,
+        "order": 42,
+        "name": "Лимасол"
+      },
+      {
+        "countryId": 3272,
+        "departureCityId": 217,
+        "isDepartureCity": true,
+        "id": 217,
+        "order": 43,
+        "name": "Астана"
+      },
+      {
+        "countryId": 3272,
+        "departureCityId": 216,
+        "isDepartureCity": true,
+        "id": 216,
+        "order": 44,
+        "name": "Алматы"
+      },
+      {
+        "countryId": 3272,
+        "departureCityId": 217,
+        "isDepartureCity": false,
+        "id": 862,
+        "order": 45,
+        "name": "Павлодар"
+      },
+      {
+        "countryId": 6236,
+        "departureCityId": 2011,
+        "isDepartureCity": true,
+        "id": 2011,
+        "order": 46,
+        "name": "Белград"
+      },
+      {
+        "countryId": 359,
+        "departureCityId": 1303,
+        "isDepartureCity": true,
+        "id": 1303,
+        "order": 47,
+        "name": "София"
+      },
+      {
+        "countryId": 6234,
+        "departureCityId": 1237,
+        "isDepartureCity": true,
+        "id": 1237,
+        "order": 49,
+        "name": "Кишинев"
+      },
+      {
+        "countryId": 6226,
+        "departureCityId": 1345,
+        "isDepartureCity": true,
+        "id": 1345,
+        "order": 51,
+        "name": "Рига"
+      },
+      {
+        "countryId": 6266,
+        "departureCityId": 1783,
+        "isDepartureCity": true,
+        "id": 1783,
+        "order": 52,
+        "name": "Бухарест"
+      },
+      {
+        "countryId": 6266,
+        "departureCityId": 2663,
+        "isDepartureCity": true,
+        "id": 2663,
+        "order": 53,
+        "name": "Клуж-Напока"
+      },
+      {
+        "countryId": 372,
+        "departureCityId": 489,
+        "isDepartureCity": true,
+        "id": 489,
+        "order": 54,
+        "name": "Таллинн"
+      },
+      {
+        "countryId": 6250,
+        "departureCityId": 2238,
+        "isDepartureCity": true,
+        "id": 2238,
+        "order": 55,
+        "name": "Будапешт"
+      },
+      {
+        "countryId": 6264,
+        "departureCityId": 1784,
+        "isDepartureCity": true,
+        "id": 1784,
+        "order": 56,
+        "name": "Варшава"
+      },
+      {
+        "countryId": 6264,
+        "departureCityId": 3215,
+        "isDepartureCity": true,
+        "id": 3215,
+        "order": 57,
+        "name": "Вроцлав"
+      },
+      {
+        "countryId": 6264,
+        "departureCityId": 2935,
+        "isDepartureCity": true,
+        "id": 2935,
+        "order": 58,
+        "name": "Гданьск"
+      },
+      {
+        "countryId": 6264,
+        "departureCityId": 3015,
+        "isDepartureCity": true,
+        "id": 3015,
+        "order": 59,
+        "name": "Катовице"
+      },
+      {
+        "countryId": 6264,
+        "departureCityId": 3119,
+        "isDepartureCity": true,
+        "id": 3119,
+        "order": 60,
+        "name": "Познань"
+      },
+      {
+        "countryId": 6252,
+        "departureCityId": 1484,
+        "isDepartureCity": true,
+        "id": 1484,
+        "order": 61,
+        "name": "Тбилиси"
+      },
+      {
+        "countryId": 6252,
+        "departureCityId": 2376,
+        "isDepartureCity": true,
+        "id": 2376,
+        "order": 62,
+        "name": "Кутаиси"
+      },
+      {
+        "countryId": 6228,
+        "departureCityId": 968,
+        "isDepartureCity": true,
+        "id": 968,
+        "order": 63,
+        "name": "Ереван"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 2499,
+        "isDepartureCity": true,
+        "id": 2499,
+        "order": 66,
+        "name": "Берлин"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 5335,
+        "isDepartureCity": true,
+        "id": 5335,
+        "order": 67,
+        "name": "Бремен"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 3341,
+        "isDepartureCity": true,
+        "id": 3341,
+        "order": 68,
+        "name": "Гамбург"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 3347,
+        "isDepartureCity": true,
+        "id": 3347,
+        "order": 69,
+        "name": "Ганновер"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 5337,
+        "isDepartureCity": true,
+        "id": 5337,
+        "order": 70,
+        "name": "Дрезден"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 1844,
+        "isDepartureCity": true,
+        "id": 1844,
+        "order": 71,
+        "name": "Дюссельдорф"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 3345,
+        "isDepartureCity": true,
+        "id": 3345,
+        "order": 72,
+        "name": "Кёльн"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 3339,
+        "isDepartureCity": true,
+        "id": 3339,
+        "order": 73,
+        "name": "Лейпциг"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 5341,
+        "isDepartureCity": true,
+        "id": 5341,
+        "order": 74,
+        "name": "Мюнстер"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 1859,
+        "isDepartureCity": true,
+        "id": 1859,
+        "order": 75,
+        "name": "Мюнхен"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 2480,
+        "isDepartureCity": true,
+        "id": 2480,
+        "order": 76,
+        "name": "Нюрнберг"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 5347,
+        "isDepartureCity": true,
+        "id": 5347,
+        "order": 77,
+        "name": "Саарбрюккен"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 1845,
+        "isDepartureCity": true,
+        "id": 1845,
+        "order": 78,
+        "name": "Франкфурт"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 5345,
+        "isDepartureCity": true,
+        "id": 5345,
+        "order": 79,
+        "name": "Фридрихсхафен"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 3343,
+        "isDepartureCity": true,
+        "id": 3343,
+        "order": 80,
+        "name": "Штутгарт"
+      },
+      {
+        "countryId": 6251,
+        "departureCityId": 5339,
+        "isDepartureCity": true,
+        "id": 5339,
+        "order": 81,
+        "name": "Эрфурт"
+      }
+    ],
+    "countries": [{
+        "currencyCode": "RUR",
+        "id": 460,
+        "order": 0,
+        "code": "RU",
+        "name": "Россия"
+      },
+      {
+        "currencyCode": "BYN",
+        "id": 375,
+        "order": 1,
+        "code": "BY",
+        "name": "Беларусь"
+      },
+      {
+        "currencyCode": "KZT",
+        "id": 3272,
+        "order": 3,
+        "code": "KZ",
+        "name": "Казахстан"
+      },
+      {
+        "currencyCode": "MDL",
+        "id": 6234,
+        "order": 4,
+        "code": "MD",
+        "name": "Молдова"
+      },
+      {
+        "currencyCode": "UAH",
+        "id": 5,
+        "order": 5,
+        "code": "UA",
+        "name": "Украина"
+      },
+      {
+        "currencyCode": "AMD",
+        "id": 6228,
+        "order": 6,
+        "code": "AM",
+        "name": "Армения"
+      },
+      {
+        "currencyCode": "GEL",
+        "id": 6252,
+        "order": 7,
+        "code": "GE",
+        "name": "Грузия"
+      },
+      {
+        "currencyCode": "EUR",
+        "id": 6226,
+        "order": 8,
+        "code": "LV",
+        "name": "Латвия"
+      },
+      {
+        "currencyCode": "EUR",
+        "id": 372,
+        "order": 9,
+        "code": "EE",
+        "name": "Эстония"
+      },
+      {
+        "currencyCode": "RON",
+        "id": 6266,
+        "order": 10,
+        "code": "RO",
+        "name": "Румыния"
+      },
+      {
+        "currencyCode": "RSD",
+        "id": 6236,
+        "order": 11,
+        "code": "RS",
+        "name": "Сербия"
+      },
+      {
+        "currencyCode": "BGN",
+        "id": 359,
+        "order": 12,
+        "code": "BG",
+        "name": "Болгария"
+      },
+      {
+        "currencyCode": "HUF",
+        "id": 6250,
+        "order": 13,
+        "code": "HU",
+        "name": "Венгрия"
+      },
+      {
+        "currencyCode": "PLN",
+        "id": 6264,
+        "order": 14,
+        "code": "PL",
+        "name": "Польша"
+      },
+      {
+        "currencyCode": "EUR",
+        "id": 6251,
+        "order": 15,
+        "code": "DE",
+        "name": "Германия"
+      },
+      {
+        "currencyCode": "EUR",
+        "id": 6258,
+        "order": 16,
+        "code": "CY",
+        "name": "Кипр"
+      },
+      {
+        "currencyCode": "EUR",
+        "id": 29,
+        "order": 17,
+        "code": "GR",
+        "name": "Греция"
+      }
+    ]
+  }
+}
