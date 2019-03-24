@@ -118,6 +118,30 @@
       top: 0px;
       left: 2px;
     }
+
+    .date-range-container {
+      position: relative;
+    }
+    .DayPicker {
+      display: none !important;
+      position: absolute;
+      left: 0;
+      top: -1px;
+      background: #FFF;
+      z-index: 9;
+      border-radius: 4px 0 4px 4px;
+      border: 1px solid #ced4da;
+    }
+    .date-range-container--right .DayPicker {
+      right: 0;
+      left: auto;
+    }
+    .date-range-container--open .DayPicker {
+      display: block !important;
+    }
+    .DayPicker-Months {
+      flex-wrap: nowrap !important;
+    }
   </style>
 </head>
 

@@ -6,7 +6,7 @@ class FormControl extends Component {
     id: null,
     className: "form-control",
     type: "text",
-    defaultValue: "",
+    value: "",
     placeholder: "",
 
     onFocus: null,
@@ -14,22 +14,39 @@ class FormControl extends Component {
     onChange: null
   };
 
+  constructor(props) {
+    super(props);
+
+    this.inputProps = [
+      'id', 'className', 'type', 'value', 'defaultValue', 'placeholder', 'disabled', 'readOnly',
+      'onClick', 'onKeyDown', 'onMouseOver', 'onMouseOut', 'onFocus', 'onBlur', 'onChange',
+    ];
+  }
+
+  onChange = e => {
+    if (this.props.onChange) {
+      this.props.onChange(e);
+    }
+  }
+
   render() {
     const props = this.props;
+
+    let inputProps = {};
+    for (let key in props) {
+      if (this.inputProps.indexOf(key) >= 0) {
+        inputProps[key] = props[key];
+      }
+    }
 
     return (
       <div>
         {props.label && <label htmlFor={props.id}>{props.label}</label>}
 
         <input
-          id={props.id}
-          className={props.className}
-          type={props.type}
+          {...inputProps}
           value={props.value}
-          placeholder={props.placeholder}
-          onFocus={props.onFocus}
-          onBlur={props.onBlur}
-          onChange={props.onChange}
+          onChange={this.onChange}
         />
 
         {props.children}

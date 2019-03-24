@@ -128,14 +128,13 @@ class MultiList extends Component {
     const _checkedValues = Object.values(checkedValues);
     // если инпут не в фокусе
     const value = !inputFocus
-      ? // при выбранных значениях
-        _checkedValues.length
-        ? // покажем значение первого из списка и, если в списке больше 1 значения доп кол-во
-          _checkedValues[0] +
-          (_checkedValues.length > 1 ? " +" + (_checkedValues.length - 1) : "")
+      // при выбранных значениях
+      ? _checkedValues.length
+        // покажем значение первого из списка и, если в списке больше 1 значения доп кол-во
+        ? _checkedValues[0] + (_checkedValues.length > 1 ? " +" + (_checkedValues.length - 1) : "")
         : ""
-      : // иначе показываем то что ввели при поиске
-        searchString;
+      // иначе показываем то что ввели при поиске
+      : searchString;
 
     return (
       <FormControl

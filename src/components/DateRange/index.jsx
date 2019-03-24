@@ -16,8 +16,27 @@ class DateRange extends Component {
     super(props);
     this.state = {
       from: new Date(),
-      to: new Date()
+      to: new Date(),
+      open: false,
     };
+  }
+
+  componentDidMount() {
+    document.addEventListener('mousedown', this.handleClickOutside);
+  }
+
+  handleClickOutside = event => {
+    if (
+      this.state.open &&
+      this.refs.dateRangeContainer &&
+      !this.refs.dateRangeContainer.contains(event.target)
+    ) {
+      this.setState({ open: false })
+    }
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClickOutside);
   }
 
   handleDayClick = day => {
@@ -27,7 +46,7 @@ class DateRange extends Component {
 
   render() {
     const props = this.props;
-    const { from, to } = this.state;
+    const { from, to, open } = this.state;
     const modifiers = { start: from, end: to };
 
     return (
@@ -39,8 +58,15 @@ class DateRange extends Component {
             ? `${from.toLocaleDateString()} - ${to.toLocaleDateString()}`
             : ""
         }
+        onFocus={e => this.setState({ open: true })}
       >
-        <div className="date-range-container">
+        <div
+          ref="dateRangeContainer"
+          className={
+            "date-range-container date-range-container--right" +
+            (open ? " date-range-container--open" : "")
+          }
+        >
           <DayPicker
             numberOfMonths={props.numberOfMonths}
             selectedDays={[from, { from, to }]}
